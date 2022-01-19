@@ -1,12 +1,20 @@
-export function valid(user: string , id:number){
-    if(user==="Williams" && id===132){
-        return true
-    }else{
-        return "erro01"
-    }
+var md5 = require('md5');
+import { Acess, User } from './interfaces'
+
+// imaginando que esses dados seria recebido do Banco 
+const Master: Acess = {
+    Key: '4c1caad0b647a31d0ddf5c0521b6c1ea',
+    Active: 1
 }
 
-export let version =1.0
+export const valid = (user: string, id: number) => {
+    let Key = md5(user + id);
+    if (Key === Master.Key && Master.Active === 1) {
+        return true
+    }
 
+    return false
 
-export default {valid, version}
+}
+
+export default { valid }
