@@ -10,9 +10,9 @@ interface Address {
     complement : string
 }
 
-export interface User {
+export interface User extends Address  {
     name: string,
     email: string
-    address : Address
+    
 }
 
