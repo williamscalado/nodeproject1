@@ -1,0 +1,8 @@
+{
+  "name": "projetonode",
+  "version": "1",
+  "description": "primeiro projeto em node",
+  "main": "index.js",
+  "author": "Williams Calado <williamscalado@gmail.com>",
+  "license": "MIT"
+}
