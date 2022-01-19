@@ -1,16 +1,9 @@
+// quando for importar tudo 
+// import * as func  from './function'
+
+import Functions  from './function'
 
 let user : string = "Williams";
 let id : number = 132;
 
-
-function valid(user: string , id:number){
-    if(user==="Williams" && id===132){
-        console.log("liberado")
-    }else{
-        console.log("erro01")
-    }
-}
-
-valid("Williams",132)
-
-
+console.log(Functions.valid("Williams",1322))
