@@ -12,9 +12,7 @@ export const valid = (user: string, id: number) => {
     if (Key === Master.Key && Master.Active === 1) {
         return true
     }
-
     return false
-
 }
 
 export default { valid }
