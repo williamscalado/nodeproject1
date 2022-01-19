@@ -4,5 +4,8 @@
   "description": "primeiro projeto em node",
   "main": "index.js",
   "author": "Williams Calado <williamscalado@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.10"
+  }
 }
