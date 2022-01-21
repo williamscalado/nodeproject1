@@ -15,4 +15,3 @@ export interface User extends Address {
     email: string
 
 }
-
