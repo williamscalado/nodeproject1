@@ -1,6 +1,4 @@
 import { Router, Request, Response } from 'express';
-
-
 const routerlogin = Router();
 
 routerlogin.get('/', ( req: Request , res : Response) => {
