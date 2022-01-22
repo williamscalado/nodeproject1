@@ -6,6 +6,11 @@ const server = express()
 // formas de usar as rotas 
 server.use('/', mainroutes)
 server.use('/login', loginroutes)
+
+// pagina 404
+server.use((req: Request, res: Response) => {
+    res.status(404).send('Ops! page not found!')
+})
 server.listen(3000)
 
 
